@@ -102,6 +102,12 @@
         </div>
       </li>
     </ul>
+    <div class="view-resume">
+      <a href="">
+        View Full resumé 
+      </a>
+      <Icon name="system-uicons:arrow-right"></Icon>
+    </div>
   </section>
 </template>
 
@@ -126,7 +132,7 @@
     height: 100%;
     width: 100%;
     margin: 1rem;
-    border-radius: .25rem;
+    border-radius: .5rem;
   }
 
   .exp-title,
@@ -169,6 +175,28 @@
       .icon {
         transform: translate(.2rem, -.35rem);
       }
+    }
+  }
+}
+
+.view-resume {
+  margin-top: 3rem;
+  a {
+    font-weight: 600;
+    padding-bottom: .5rem;
+    transition: all 200ms linear;
+  }
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: all 200ms linear;
+  }
+  &:hover {
+    a {
+      border-bottom: 1px solid #00ffff;
+    }
+    .icon {
+      transform: translate(.5rem, 0);
     }
   }
 }
