@@ -11,14 +11,7 @@
                 Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est.
                 Paisis,
                 filhis, espiritis santis. Viva Forevis aptent taciti sociosqu ad litora torquent. Per aumento de cachacis,
-                eu
-                reclamis.
-                <br>
-                Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Mauris nec dolor in eros commodo tempor.
-                Aenean
-                aliquam molestie leo, vitae iaculis nisl. Nulla id gravida magna, ut semper sapien. Copo furadis é disculpa
-                de
-                bebadis, arcu quam euismod magna.
+                eu reclamis.
             </p>
         </div>
 
@@ -47,11 +40,16 @@
     </header>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  width: 50%;
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
   .sub-title {
     line-height: 1.75;
   }
@@ -77,12 +75,12 @@ header {
           display: inline-block;
           border: 1px solid #3a3a3a;
           vertical-align: middle;
-          transition: all 250ms linear;
+          transition: all 100ms linear;
         }
 
         &>a {
           color: #3a3a3a;
-          transition: all 250ms linear;
+          transition: all 100ms linear;
 
           &:hover {
             color: white;

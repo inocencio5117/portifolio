@@ -1,8 +1,12 @@
 <template>
-  <MainContainerComponent>
-    <HeaderComponent class="child-container" />
-    <ContentContainerComponent/>
-  </MainContainerComponent>
+  <MainContainer>
+    <Header />
+    <ContentContainer>
+      <SectionsAbout/>
+      <SectionsExperience/>
+      <SectionsProjects/>
+    </ContentContainer>
+  </MainContainer>
 </template>
 
 <script setup lang="ts">

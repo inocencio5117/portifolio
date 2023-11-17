@@ -10,18 +10,16 @@
 
 <style lang="scss">
 .main-container {
-  min-height: 100vh;
-  max-height: 100vh;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   margin: 0 auto;
   padding: 0 6rem;
-}
 
-.child-container {
-  width: 50%;
-  padding: 6rem 0;
+  & > * {
+    width: 50%;
+    padding: 6rem 0;
+  }
 }
 </style>
 
