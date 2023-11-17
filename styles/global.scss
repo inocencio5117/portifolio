@@ -39,22 +39,30 @@ strong {
 
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
-  body {
+  .dark-mode body {
     --text-color: #eee;
     --bkg-color: #121212;
+    --bkg-highlighted-color: #00ffff38;
+    --text-highlighted-color: #00ffff;
   }
-  body.light-theme {
+  .light-mode body {
     --text-color: #222;
     --bkg-color: #fff;
+    --bkg-highlighted-color: rgba(0, 255, 255, 0.822);
+    --text-highlighted-color: #009b9b;
   }
 }
 
 body {
   background: var(--bkg-color);
   -webkit-font-smoothing: antialiased;
+  transition: background 200ms linear;
 }
 
 h1,
+h2,
+h3,
+h4,
 p {
   color: var(--text-color);
 }

@@ -1,44 +1,52 @@
 <template>
-    <header class="header">
-        <div>
-            <h1 class="title">
-                Vinicius Inocêncio
-            </h1>
-            <h2 class="sub-title">
-                Frontend Engineer
-            </h2>
-            <p class="bio">
-                Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est.
-                Paisis,
-                filhis, espiritis santis. Viva Forevis aptent taciti sociosqu ad litora torquent. Per aumento de cachacis,
-                eu reclamis.
-            </p>
-        </div>
+  <header class="header">
+    <div>
+      <h1 class="title">
+        Vinicius Inocêncio
+      </h1>
+      <h2 class="sub-title">
+        Frontend Engineer
+      </h2>
+      <p class="bio">
+        Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est.
+        Paisis,
+        filhis, espiritis santis. Viva Forevis aptent taciti sociosqu ad litora torquent. Per aumento de cachacis,
+        eu reclamis.
+      </p>
+    </div>
 
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-            </ul>
-        </nav>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+      </ul>
+    </nav>
 
-        <ul class="social-media">
-            <li>
-                <Icon name="uil:github" color="#eee" />
-            </li>
-            <li>
-                <Icon name="uil:linkedin" color="#eee" />
-            </li>
-        </ul>
-    </header>
+    <ul class="social-media">
+      <li>
+        <Icon name="uil:github" />
+      </li>
+      <li>
+        <Icon name="uil:linkedin" />
+      </li>
+    </ul>
+
+    <div class="config">
+      <UiLanguageSelect />
+      <UiColorToggle />
+    </div>
+  </header>
 </template>
+
+<script lang="ts" setup>
+</script>
 
 <style lang="scss">
 header {
@@ -50,6 +58,7 @@ header {
   max-height: 100vh;
   position: sticky;
   top: 0;
+
   .sub-title {
     line-height: 1.75;
   }
@@ -70,24 +79,24 @@ header {
 
         &>a::before {
           content: "";
-          width: 2rem;
+          width: 2.25rem;
           margin-right: 3px;
           display: inline-block;
-          border: 1px solid #3a3a3a;
+          border: 1px solid #919191;
           vertical-align: middle;
           transition: all 100ms linear;
         }
 
         &>a {
-          color: #3a3a3a;
+          color: #919191;
           transition: all 100ms linear;
 
           &:hover {
-            color: white;
+            color: var(--text-color);
 
             &::before {
               width: 3rem;
-              border-color: white;
+              border-color: var(--text-color);
             }
           }
         }
@@ -104,7 +113,15 @@ header {
     .icon {
       width: 1.75rem;
       height: 1.75rem;
+      color: var(--text-color);
     }
+  }
+
+  .config {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
   }
 }
 </style>

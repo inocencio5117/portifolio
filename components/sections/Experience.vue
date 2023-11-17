@@ -155,8 +155,8 @@
     margin-top: 1rem;
 
     li {
-      background-color: #00ffff38;
-      color: #00ffff;
+      background-color: var(--bkg-highlighted-color);
+      color: var(--text-highlighted-color);
       padding: .35rem .65rem;
       border-radius: 1rem;
     }
@@ -193,7 +193,7 @@
   }
   &:hover {
     a {
-      border-bottom: 1px solid #00ffff;
+      border-bottom: 1px solid var(--text-highlighted-color);
     }
     .icon {
       transform: translate(.5rem, 0);

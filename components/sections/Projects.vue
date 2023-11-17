@@ -68,6 +68,13 @@
     .text-container {
       width: 70%;
 
+      h3 {
+        transition: all 200ms linear;
+        .icon {
+          transition: all 200ms linear;
+        }
+      }
+
       p {
         margin-top: 1.5rem;
         line-height: 1.625;
@@ -80,6 +87,10 @@
       opacity: 1;
       background-color: rgba(255, 255, 255, 0.2);
       filter: opacity(25%);
+    }
+
+    h3 {
+      color: aqua;
     }
 
     .icon {
