@@ -1,11 +1,11 @@
 <template>
   <section id="experience" aria-label="My experience">
     <ul>
-      <li class="exp-item">
+      <li v-for="item in expData.items" class="exp-item">
         <div class="bkg-glass"></div>
         <div>
           <header>
-            2018 - PRESENT
+            {{ $t(item.date) }}
           </header>
           <div>
             <h3 class="exp-title">
@@ -13,90 +13,13 @@
                 <a href=""></a>
               </div>
               <span>
-                Lead Engineer -> Upstatement
+                {{ $t(item.title) }}
                 <Icon name="system-uicons:arrow-top-right"></Icon>
               </span>
             </h3>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Interagi no
-              mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Nullam volutpat risus nec leo
-              commodo, ut interdum diam laoreet. Sed non consequat odio.
-              Nullam volutpat risus nec leo
-              commodo, ut interdum diam laoreet. Sed non consequat odio.
-            </p>
+            <p>{{ $t(item.description) }}</p>
             <ul class="techs-list">
-              <li>React</li>
-              <li>Redux</li>
-              <li>Vite</li>
-              <li>React-query</li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="exp-item">
-        <div class="bkg-glass"></div>
-        <div>
-          <header>
-            2022 - 2026
-          </header>
-          <div>
-            <h3 class="exp-title">
-              <div>
-                <a href=""></a>
-              </div>
-              <span>
-                President -> Nicaragua
-                <Icon name="system-uicons:arrow-top-right"></Icon>
-              </span>
-            </h3>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!
-              Viva Forevis aptent taciti sociosqu ad litora torquent. Suco de cevadiss, é um leite divinis, qui tem
-              lupuliz, matis, aguis e fermentis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
-              <br>
-              Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Admodum accumsan disputationi eu sit. Vide
-              electram sadipscing et per. Aenean aliquam molestie leo, vitae iaculis nisl. A ordem dos tratores não altera
-              o pão duris.
-            </p>
-            <ul class="techs-list">
-              <li>React</li>
-              <li>Redux</li>
-              <li>Vite</li>
-              <li>React-query</li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="exp-item">
-        <div class="bkg-glass"></div>
-        <div>
-          <header>
-            2014 - 2019
-          </header>
-          <div>
-            <h3 class="exp-title">
-              <div>
-                <a href=""></a>
-              </div>
-              <span>
-                Master Chief - Interstellar
-                <Icon name="system-uicons:arrow-top-right"></Icon>
-              </span>
-            </h3>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!
-              Viva Forevis aptent taciti sociosqu ad litora torquent. Suco de cevadiss, é um leite divinis, qui tem
-              lupuliz, matis, aguis e fermentis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
-              <br>
-              Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Admodum accumsan disputationi eu sit. Vide
-              electram sadipscing et per. Aenean aliquam molestie leo, vitae iaculis nisl. A ordem dos tratores não altera
-              o pão duris.
-            </p>
-            <ul class="techs-list">
-              <li>React</li>
-              <li>Redux</li>
-              <li>Vite</li>
-              <li>React-query</li>
+              <li v-for="tech in item.techs">{{ tech }}</li>
             </ul>
           </div>
         </div>
@@ -112,7 +35,9 @@
 </template>
 
 <script lang="ts" setup>
+import exp from '~/data/experience.json'
 
+const expData = ref(exp)
 </script>
 
 <style scoped lang="scss">

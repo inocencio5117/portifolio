@@ -1,0 +1,25 @@
+{
+    "items": [
+        {
+            "company": "experience.binds.company",
+            "date": "experience.binds.date",
+            "title": "experience.binds.title",
+            "description": "experience.binds.description",
+            "techs": ["Vue.js", "Git", "Javascript", "Jira", "Vuex", "vue-router"]
+        },
+        {
+            "company": "experience.slideworks.company",
+            "date": "experience.slideworks.date",
+            "title": "experience.slideworks.title",
+            "description": "experience.slideworks.description",
+            "techs": ["Twillio", "Serverless Functions", "Javascript", "Node.js", "React.js"]
+        },
+        {
+            "company": "experience.navy.company",
+            "date": "experience.navy.date",
+            "title": "experience.navy.title",
+            "description": "experience.navy.description",
+            "techs": []
+        }
+    ]
+}

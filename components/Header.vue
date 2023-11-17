@@ -7,24 +7,19 @@
       <h2 class="sub-title">
         Frontend Engineer
       </h2>
-      <p class="bio">
-        Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est.
-        Paisis,
-        filhis, espiritis santis. Viva Forevis aptent taciti sociosqu ad litora torquent. Per aumento de cachacis,
-        eu reclamis.
-      </p>
+      <p class="bio">{{ $t('header.bio') }}</p>
     </div>
 
     <nav class="nav">
       <ul>
         <li>
-          <a href="#about">About</a>
+          <a href="#about">{{ $t('header.about') }}</a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#experience">{{ $t('header.experience') }}</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects">{{ $t('header.projects') }}</a>
         </li>
       </ul>
     </nav>

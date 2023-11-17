@@ -7,11 +7,11 @@
 </template>
 
 <script lang="ts" setup>
-const lang = ref('en')
+const { locale, setLocale } = useI18n()
 
-const handleClick = () => lang.value = lang.value === 'en' ? 'pt-br' : 'en'
+const handleClick = () => locale.value === 'en-US' ? setLocale('pt-BR') : setLocale('en-US')
 
-const dynamicIconName = computed(() => lang.value === 'en' ? 'emojione-v1:flag-for-brazil' : 'emojione-v1:flag-for-united-states')
+const dynamicIconName = computed(() => locale.value === 'en-US' ? 'emojione-v1:flag-for-brazil' : 'emojione-v1:flag-for-united-states')
 </script>
 
 <style scoped lang="scss">
