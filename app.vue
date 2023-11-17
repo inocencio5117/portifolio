@@ -1,15 +1,11 @@
 <template>
-  <div>
-    <HomeComponent/>
-  </div>
+  <MainContainerComponent>
+    <HeaderComponent class="child-container" />
+    <ContentContainerComponent/>
+  </MainContainerComponent>
 </template>
 
-<style lang="scss">
-@use '~/styles/global.scss'
-</style>
-
 <script setup lang="ts">
-
 useHead({
   title: 'Inocêncio\'s portifolio',
   meta: [{
@@ -18,3 +14,7 @@ useHead({
   }],
 })
 </script>
+
+<style lang="scss">
+@use '~/styles/global.scss'
+</style>
