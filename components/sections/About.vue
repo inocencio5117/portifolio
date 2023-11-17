@@ -1,5 +1,5 @@
 <template>
-  <section id="about">
+  <section id="about" aria-label="About me">
     Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Aenean aliquam molestie leo, vitae
     iaculis nisl. Diuretics paradis num copo é motivis de denguis. Suco de cevadiss deixa as pessoas mais interessantis.
 
