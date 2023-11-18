@@ -11,13 +11,13 @@
     <nav class="nav">
       <ul>
         <li>
-          <a href="#about">{{ $t('header.about') }}</a>
+          <a :class="{ 'selected': currentSection === 'about' }" href="#about">{{ $t('header.about') }}</a>
         </li>
         <li>
-          <a href="#experience">{{ $t('header.experience') }}</a>
+          <a :class="{ 'selected': currentSection === 'experience' }" href="#experience">{{ $t('header.experience') }}</a>
         </li>
         <li>
-          <a href="#projects">{{ $t('header.projects') }}</a>
+          <a :class="{ 'selected': currentSection === 'projects' }" href="#projects">{{ $t('header.projects') }}</a>
         </li>
       </ul>
     </nav>
@@ -43,8 +43,16 @@
 </template>
 
 <script lang="ts" setup>
+const { $emitter } = useNuxtApp()
+
 const githubURL = 'https://github.com/inocencio5117'
 const linkedinURL = 'https://linkedin.com/in/vinicius-inocencio'
+
+const currentSection = ref<string>("")
+
+$emitter.on("scrollComponent", (payload) => {
+  currentSection.value = String(payload) || ""
+})
 </script>
 
 <style lang="scss">
@@ -91,7 +99,7 @@ header {
           color: #919191;
           transition: all 100ms linear;
 
-          &:hover {
+          &:hover, &.selected {
             color: var(--text-color);
 
             &::before {

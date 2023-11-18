@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["nuxt-icon", "@nuxtjs/color-mode", "@nuxtjs/i18n"],
+  plugins: ["~/plugins/eventBus.ts"],
   i18n: {
     defaultLocale: "pt-BR",
     locales: [

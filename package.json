@@ -19,5 +19,7 @@
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "mitt": "^3.0.1"
+  }
 }
