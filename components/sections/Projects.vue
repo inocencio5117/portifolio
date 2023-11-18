@@ -1,8 +1,8 @@
 <template>
   <section id="projects" aria-label="My projects">
     <ul>
-      <li v-for="item in pjr.items" class="pjt-item">
-        <div class="bkg-glass"></div>
+      <li v-for="item in pjrData.items" class="pjt-item">
+        <div @click="sendToLink(item.link)" class="bkg-glass"></div>
         <div class="pjt-container">
           <div class="img-container">
             <img :src="item.image"
@@ -10,10 +10,10 @@
           </div>
           <div class="text-container">
             <h3>
-              <a href="">
+              <span>
                 {{ $t(item.name) }}
                 <Icon name="system-uicons:arrow-top-right"></Icon>
-              </a>
+              </span>
             </h3>
             <p>{{ $t(item.description) }}</p>
           </div>
@@ -27,6 +27,10 @@
 import pjr from '~/data/projects.json'
 
 const pjrData = ref(pjr)
+
+const sendToLink = (url: string): void => {
+  window.open(url, '_blank')
+}
 </script>
 
 <style scoped lang="scss">
@@ -47,6 +51,7 @@ const pjrData = ref(pjr)
     width: 100%;
     margin: 1rem;
     border-radius: .5rem;
+    cursor: pointer;
   }
 
   .pjt-container {

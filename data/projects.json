@@ -4,19 +4,29 @@
             "name": "projects.pokedex.name",
             "description": "projects.pokedex.description",
             "image": "/images/Screenshot-pokedex.png",
+            "link": "https://inocencio-pokedex.netlify.app/",
             "techs": ["React.js", "React Query", "Redux-toolkit", "PokéAPI", "Javascript"]
         },
         {
             "name": "projects.numenera.name",
             "description": "projects.numenera.description",
             "image": "images/Screenshot-numenera.png",
+            "link": "https://numenera-chargen.inocencio.dev/",
             "techs": ["React.js", "React Router", "Sass", "Typescript"]
         },
         {
             "name": "projects.vue_graphs.name",
             "description": "projects.vue_graphs.description",
             "image": "/images/Screenshot-vue-graphs.png",
+            "link": "https://github.com/inocencio5117/vue-graphs",
             "techs": ["Vue.js", "Vite", "Sass", "Chart.js", "Javascript"]           
+        },
+        {
+            "name": "projects.calculator.name",
+            "description": "projects.calculator.description",
+            "image": "/images/Screenshot-calculator.png",
+            "link": "https://github.com/inocencio5117/pitagoras_calculator",
+            "techs": ["Python", "Flask", "React.js", "Vite", "Typescript"]
         }
     ]
 }

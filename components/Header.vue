@@ -2,11 +2,9 @@
   <header class="header">
     <div>
       <h1 class="title">
-        Vinicius Inocêncio
+        Vinicius Inocêncio de Souza
       </h1>
-      <h2 class="sub-title">
-        Frontend Engineer
-      </h2>
+      <h2 class="sub-title">{{ $t('header.title') }}</h2>
       <p class="bio">{{ $t('header.bio') }}</p>
     </div>
 

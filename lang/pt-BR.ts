@@ -1,12 +1,13 @@
 export default {
   header: {
-    bio: "O cuidado em identificar pontos críticos no comprometimento entre as equipes não pode mais se dissociar das regras de conduta normativas.",
+    bio: "Eu construo soluções que geram impacto!",
+    title: "Desenvolvedor Fullstack",
     about: "Sobre",
     experience: "Experiência",
     projects: "Projetos",
   },
   about: {
-    text: "Por conseguinte, o início da atividade geral de formação de atitudes apresenta tendências no sentido de aprovar a manutenção dos índices pretendidos.\nAinda assim, existem dúvidas a respeito de como a complexidade dos estudos efetuados auxilia a preparação e a composição do retorno esperado a longo prazo.",
+    text: "Desenvolvedor de Software recém-graduado com especialização em JavaScript, TypeScript, Python, e Node.js. Expertise em Django, React e Vue, com foco em escalabilidade. Atualmente, aprimorando habilidades em C# .NET, ASP.NET e SQL. Busco oportunidades fullstack ou frontend para aplicar minha paixão pela tecnologia e filosofia.",
   },
   experience: {
     binds: {
@@ -43,6 +44,10 @@ export default {
     vue_graphs: {
         name: "Vue Graphs",
         description: "Um projeto simples que renderiza dinamicamente dados locais em gráficos de barras. Utiliza o framework Vue.js e a biblioteca Chart.js",
+    },
+    calculator: {
+        name: "Calculadora do Teorema de Pitágoras",
+        description: "Um projeto fullstack que calcula o teorema de pitágoras. Feito utilizando Python e Flask no backend, React.js com Typescript no frontend"
     }
   }
 };
