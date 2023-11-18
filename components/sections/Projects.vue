@@ -2,15 +2,14 @@
   <section id="projects" aria-label="My projects">
     <ul>
       <li v-for="item in pjrData.items" class="pjt-item">
-        <div @click="sendToLink(item.link)" class="bkg-glass"></div>
+        <div v-if="!isMobile" @click="sendToLink(item.link)" class="bkg-glass"></div>
         <div class="pjt-container">
           <div class="img-container">
-            <img :src="item.image"
-              :alt="$t(item.name)">
+            <img :src="item.image" :alt="$t(item.name)">
           </div>
           <div class="text-container">
             <h3>
-              <span>
+              <span :style="{ cursor: isMobile ? 'pointer' : 'default' }" @click="isMobile && sendToLink(item.link)">
                 {{ $t(item.name) }}
                 <Icon name="system-uicons:arrow-top-right"></Icon>
               </span>
@@ -27,6 +26,11 @@
 import pjr from '~/data/projects.json'
 
 const pjrData = ref(pjr)
+let isMobile = ref<boolean>(false)
+
+onMounted(() => {
+  isMobile.value = window.innerWidth < 1040
+})
 
 const sendToLink = (url: string): void => {
   window.open(url, '_blank')
@@ -73,6 +77,7 @@ const sendToLink = (url: string): void => {
 
       h3 {
         transition: all 200ms linear;
+
         .icon {
           transition: all 200ms linear;
         }
@@ -98,6 +103,29 @@ const sendToLink = (url: string): void => {
 
     .icon {
       transform: translate(.2rem, -.35rem);
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .pjt-item {
+      margin: 2rem 0;
+    }
+    .pjt-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      .bkg-glass {
+        opacity: 0;
+      }
+      .text-container {
+        width: 100%;
+      }
+      .img-container {
+        width: 70%;
+        margin-top: 2rem;
+        img {
+          width: 325px;
+        }
+      }
     }
   }
 }

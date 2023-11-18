@@ -85,13 +85,16 @@ const resumeURL = computed(() => {
 
   .techs-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1rem;
 
     li {
+      display: flex;
+      place-items: center;
       background-color: var(--bkg-highlighted-color);
       color: var(--text-highlighted-color);
-      padding: .35rem .65rem;
+      padding: .5rem 1rem;
       border-radius: 1rem;
     }
   }
@@ -128,6 +131,14 @@ const resumeURL = computed(() => {
     }
     .icon {
       transform: translate(.5rem, 0);
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .exp-item {
+    .bkg-glass {
+      opacity: 0;
     }
   }
 }

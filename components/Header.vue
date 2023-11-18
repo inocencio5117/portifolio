@@ -50,8 +50,8 @@ const linkedinURL = 'https://linkedin.com/in/vinicius-inocencio'
 
 const currentSection = ref<string>("")
 
-$emitter.on("scrollComponent", (payload) => {
-  currentSection.value = String(payload) || ""
+$emitter.on("scrollComponent", (payload: any) => {
+  currentSection.value = String(payload.section)
 })
 </script>
 
@@ -130,6 +130,20 @@ header {
     align-items: center;
     margin-top: 3rem;
     gap: 2rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  .header {
+    position: initial;
+
+    .bio {
+      min-height: 1rem;
+    }
+
+    .nav {
+      display: none;
+    }
   }
 }
 </style>
