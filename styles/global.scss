@@ -44,17 +44,24 @@ strong {
     --bkg-color: #121212;
     --bkg-highlighted-color: #00ffff38;
     --text-highlighted-color: #00ffff;
+    --bkg-hover-shadow: rgba(255, 255, 255, 0.2);
+    --bkg-body: rgb(18,18,18);
+    --bkg-body-gradient: linear-gradient(135deg, rgba(18,18,18,1) 0%, rgba(39,39,39,1) 71%, rgba(56,56,56,1) 100%);
   }
   .light-mode body {
     --text-color: #222;
     --bkg-color: #fff;
     --bkg-highlighted-color: rgba(0, 255, 255, 0.822);
     --text-highlighted-color: #009b9b;
+    --bkg-hover-shadow: rgba(0, 0, 0, 0.45);
+    --bkg-body: rgb(248,249,250);
+    --bkg-body-gradient: linear-gradient(156deg, rgba(248,249,250,1) 37%, rgba(173,181,189,1) 95%);
   }
 }
 
 body {
-  background: var(--bkg-color);
+  background: var(--bkg-body);
+  background: var(--bkg-body-gradient);
   -webkit-font-smoothing: antialiased;
   transition: background 200ms linear;
 }

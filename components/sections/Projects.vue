@@ -88,7 +88,7 @@ const sendToLink = (url: string): void => {
   &:hover {
     .bkg-glass {
       opacity: 1;
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: var(--bkg-hover-shadow);
       filter: opacity(25%);
     }
 

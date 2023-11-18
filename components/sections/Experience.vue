@@ -12,10 +12,7 @@
               <div>
                 <a href=""></a>
               </div>
-              <span>
-                {{ $t(item.title) }}
-                <Icon name="system-uicons:arrow-top-right"></Icon>
-              </span>
+              <span>{{ $t(item.title) }}</span>
             </h3>
             <p>{{ $t(item.description) }}</p>
             <ul class="techs-list">
@@ -26,8 +23,8 @@
       </li>
     </ul>
     <div class="view-resume">
-      <a href="">
-        View Full resumé 
+      <a :href="resumeURL" target=”_blank” rel="noopener noreferrer">
+        {{ $t('experience.resume') }}
       </a>
       <Icon name="system-uicons:arrow-right"></Icon>
     </div>
@@ -37,13 +34,21 @@
 <script lang="ts" setup>
 import exp from '~/data/experience.json'
 
+const { locale } = useI18n()
 const expData = ref(exp)
+
+const resumeURL = computed(() => {
+  return locale.value === 'pt-BR'
+    ? 'https://drive.google.com/file/d/1bPWOEnoXzZ6nENzR2g3cWNtlaEF0MHIV/view?usp=drive_link'
+    : 'https://drive.google.com/file/d/1YHhW6KLKowlCNvEmeCEDT_b8X0ymqG5B/view?usp=drive_link'
+})
+
 </script>
 
 <style scoped lang="scss">
 .exp-item {
   position: relative;
-  padding: 1rem;
+  padding: 2rem;
   margin: 1rem 0;
 
   .bkg-glass {
@@ -60,6 +65,10 @@ const expData = ref(exp)
     border-radius: .5rem;
   }
 
+  header {
+    color: var(--text-color);
+  }
+
   .exp-title,
   .icon {
     transition: all 200ms ease;
@@ -71,7 +80,7 @@ const expData = ref(exp)
   }
 
   p {
-    line-height: 1.5;
+    line-height: 1.625;
   }
 
   .techs-list {
@@ -90,22 +99,19 @@ const expData = ref(exp)
   &:hover {
     .bkg-glass {
       opacity: 1;
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: var(--bkg-hover-shadow);
       filter: opacity(25%);
     }
 
     .exp-title {
       color: aqua;
-
-      .icon {
-        transform: translate(.2rem, -.35rem);
-      }
     }
   }
 }
 
 .view-resume {
   margin-top: 3rem;
+  color: var(--text-color);
   a {
     font-weight: 600;
     padding-bottom: .5rem;

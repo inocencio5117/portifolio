@@ -24,10 +24,14 @@
 
     <ul class="social-media">
       <li>
-        <Icon name="uil:github" />
+        <a :href="githubURL" target=”_blank” rel="noopener noreferrer">
+          <Icon name="uil:github" />
+        </a>
       </li>
       <li>
-        <Icon name="uil:linkedin" />
+        <a :href="linkedinURL" target=”_blank” rel="noopener noreferrer">
+          <Icon name="uil:linkedin" />
+        </a>
       </li>
     </ul>
 
@@ -39,6 +43,8 @@
 </template>
 
 <script lang="ts" setup>
+const githubURL = 'https://github.com/inocencio5117'
+const linkedinURL = 'https://linkedin.com/in/vinicius-inocencio'
 </script>
 
 <style lang="scss">
@@ -53,19 +59,19 @@ header {
   top: 0;
 
   .sub-title {
-    line-height: 1.75;
+    line-height: 1.625;
   }
 
   .bio {
     margin-top: 1rem;
-    line-height: 1.5;
+    line-height: 1.625;
     max-width: 90%;
     min-height: 8rem;
   }
 
   .nav {
     ul {
-      margin-top: 4rem;
+      margin: 2.5rem 0;
       width: max-content;
 
       li {

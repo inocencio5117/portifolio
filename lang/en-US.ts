@@ -31,6 +31,7 @@ export default {
       description:
         "Mussum Ipsum, cacilds vidis litro abertis.  Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. A ordem dos tratores não altera o pão duris.",
     },
+    resume: "View full resumé"
   },
   projects: {
     pokedex: {
