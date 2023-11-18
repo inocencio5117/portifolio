@@ -31,4 +31,18 @@ export default {
         "Mussum Ipsum, cacilds vidis litro abertis.  Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. A ordem dos tratores não altera o pão duris.",
     },
   },
+  projects: {
+    pokedex: {
+        name: "Pokedéx",
+        description: "A project that takes inspiration from the famous Pokemon anime and recreates a pokedex. It uses the public Pokemon API PokéAPI",
+    },
+    numenera: {
+        name: "Numenéra Character Generator",
+        description: "A tool to help create characters for the tabletop RPG Numenéra. The project uses Typescript and also React.js with its Context API",
+    },
+    vue_graphs: {
+        name: "Vue Graphs",
+        description: "A simple project that dynamically renders local data in bar charts. Uses the Vue.js framework and the Chart.js library",
+    }
+  }
 };

@@ -62,6 +62,7 @@ header {
     margin-top: 1rem;
     line-height: 1.5;
     max-width: 90%;
+    min-height: 8rem;
   }
 
   .nav {

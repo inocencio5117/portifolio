@@ -1,25 +1,21 @@
 <template>
   <section id="projects" aria-label="My projects">
     <ul>
-      <li class="pjt-item">
+      <li v-for="item in pjr.items" class="pjt-item">
         <div class="bkg-glass"></div>
         <div class="pjt-container">
           <div class="img-container">
-            <img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"
-              alt="mock image">
+            <img :src="item.image"
+              :alt="$t(item.name)">
           </div>
           <div class="text-container">
             <h3>
               <a href="">
-                Steam Deck
+                {{ $t(item.name) }}
                 <Icon name="system-uicons:arrow-top-right"></Icon>
               </a>
             </h3>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Negão é teu passadis, eu sou faxa pretis. Diuretics paradis num
-              copo é motivis de denguis. Interagi no mé, cursus quis, vehicula ac nisi. Manduma pindureta quium dia nois
-              paga.
-            </p>
+            <p>{{ $t(item.description) }}</p>
           </div>
         </div>
       </li>
@@ -28,7 +24,9 @@
 </template>
 
 <script lang="ts" setup>
+import pjr from '~/data/projects.json'
 
+const pjrData = ref(pjr)
 </script>
 
 <style scoped lang="scss">

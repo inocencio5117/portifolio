@@ -1,0 +1,22 @@
+{
+    "items": [
+        {
+            "name": "projects.pokedex.name",
+            "description": "projects.pokedex.description",
+            "image": "/images/Screenshot-pokedex.png",
+            "techs": ["React.js", "React Query", "Redux-toolkit", "PokéAPI", "Javascript"]
+        },
+        {
+            "name": "projects.numenera.name",
+            "description": "projects.numenera.description",
+            "image": "images/Screenshot-numenera.png",
+            "techs": ["React.js", "React Router", "Sass", "Typescript"]
+        },
+        {
+            "name": "projects.vue_graphs.name",
+            "description": "projects.vue_graphs.description",
+            "image": "/images/Screenshot-vue-graphs.png",
+            "techs": ["Vue.js", "Vite", "Sass", "Chart.js", "Javascript"]           
+        }
+    ]
+}
