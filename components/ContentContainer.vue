@@ -12,7 +12,6 @@
 <script lang="ts" setup>
 const { $emitter } = useNuxtApp()
 
-
 let currentSection = ref<string>("")
 let hasEnteredSections = ref<boolean>(false)
 $emitter.on("scrollComponent", (payload: any) => {
@@ -44,7 +43,8 @@ $emitter.on("scrollComponent", (payload: any) => {
       position: fixed;
       top: 0;
       z-index: 20;
-      background: var(--bkg-body-gradient);
+      background-color: transparent;
+      backdrop-filter: blur(10px);
       width: 101vw;
       padding: 1rem;
       left: -1vw;
