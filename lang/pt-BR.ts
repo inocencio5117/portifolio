@@ -1,4 +1,5 @@
 export default {
+  site_title: "Vinicius Inocêncio - Portifolio",
   header: {
     bio: "Eu construo soluções que geram impacto!",
     title: "Desenvolvedor Fullstack",
@@ -15,21 +16,21 @@ export default {
       date: "Ago 2022 - Set 2023",
       title: "Desenvolvedor Web Frontend",
       description:
-        "Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Pellentesque nec nulla ligula. Donec gravida turpis a vulputate ultricies. Si num tem leite então bota uma pinga aí cumpadi! Per aumento de cachacis, eu reclamis.",
+        "Atuava como desenvolvedor frontend utilizando o framework Javascript Vue.js contruindo um PaaS de alta demanda. Fazia correções de bugs de alta complexidade e refatoração e modernização de código em diversos pontos da plataforma. Também auxiliava no planejamento e concepção de novas funcionalidades.",
     },
     slideworks: {
       company: "Slideworks",
       date: "Fev 2022 - Jun 2022",
       title: "Desenvolvedor Fullstack",
       description:
-        "Por conseguinte, o início da atividade geral de formação de atitudes apresenta tendências no sentido de aprovar a manutenção dos índices pretendidos. Ainda assim, existem dúvidas a respeito de como a complexidade dos estudos efetuados auxilia a preparação e a composição do retorno esperado a longo prazo.",
+        "Trabalhava dentro da plataforma de Omni-channel Twillio utilizando Node.js  e React.js. Fazia parte do time de sustentação e realizava a criação e manutenção de funcionalidades para diversos clientes. Operava também na criação de chatbots e  fluxos de atendimento ao cliente.",
     },
     navy: {
       company: "Marinha do Brasil",
       date: "Jan 2018 - Nov 2021",
       title: "Soldado Fuzileiro Naval",
       description:
-        "Mussum Ipsum, cacilds vidis litro abertis.  Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. A ordem dos tratores não altera o pão duris.",
+        "Operei como especialista em defesa nuclear, biológica, química e radiológica (Def. NBQR) em diversas ações como a prevenção e pronto emprego em acidentes NBQR dentro do complexo de ARAMAR e a prevenção, desinfecção e descontaminação no âmbito da COVID-19. Exerci também a manutenção e segurança das instalações navais.",
     },
     resume: "Ver Currículo completo"
   },

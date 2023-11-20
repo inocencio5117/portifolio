@@ -12,7 +12,7 @@
               <div>
                 <a href=""></a>
               </div>
-              <span>{{ $t(item.title) }}</span>
+              <span>{{ `${$t(item.title)} — ${$t(item.company)}` }}</span>
             </h3>
             <p>{{ $t(item.description) }}</p>
             <ul class="techs-list">
@@ -107,7 +107,7 @@ const resumeURL = computed(() => {
     }
 
     .exp-title {
-      color: aqua;
+      color: var(--text-highlighted-color);
     }
   }
 }

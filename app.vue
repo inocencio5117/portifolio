@@ -2,19 +2,21 @@
   <MainContainer>
     <Header />
     <ContentContainer>
-      <SectionsAbout/>
-      <SectionsExperience/>
-      <SectionsProjects/>
+      <SectionsAbout />
+      <SectionsExperience />
+      <SectionsProjects />
     </ContentContainer>
   </MainContainer>
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 useHead({
-  title: 'Inocêncio\'s portifolio',
+  title: t("site_title"),
   meta: [{
-    name: 'color-scheme',
-    content: 'dark light'
+    name: "color-scheme",
+    content: "dark light"
   }],
 })
 </script>

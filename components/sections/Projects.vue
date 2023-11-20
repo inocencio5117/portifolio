@@ -15,8 +15,12 @@
               </span>
             </h3>
             <p>{{ $t(item.description) }}</p>
+            <ul class="techs-list">
+              <li v-for="tech in item.techs">{{ tech }}</li>
+            </ul>
           </div>
         </div>
+
       </li>
     </ul>
   </section>
@@ -87,6 +91,22 @@ const sendToLink = (url: string): void => {
         margin-top: 1.5rem;
         line-height: 1.625;
       }
+
+      .techs-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        li {
+          display: flex;
+          place-items: center;
+          background-color: var(--bkg-highlighted-color);
+          color: var(--text-highlighted-color);
+          padding: .5rem 1rem;
+          border-radius: 1rem;
+        }
+      }
     }
   }
 
@@ -98,7 +118,7 @@ const sendToLink = (url: string): void => {
     }
 
     h3 {
-      color: aqua;
+      color: var(--text-highlighted-color);
     }
 
     .icon {
@@ -110,18 +130,23 @@ const sendToLink = (url: string): void => {
     .pjt-item {
       margin: 2rem 0;
     }
+
     .pjt-container {
       flex-direction: column-reverse;
       align-items: center;
+
       .bkg-glass {
         opacity: 0;
       }
+
       .text-container {
         width: 100%;
       }
+
       .img-container {
         width: 70%;
         margin-top: 2rem;
+
         img {
           width: 325px;
         }

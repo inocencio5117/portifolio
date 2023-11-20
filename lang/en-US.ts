@@ -1,4 +1,5 @@
 export default {
+  site_title: "Vinicius Inocêncio\'s portifolio",
   header: {
     bio: "I build solutions that create impact!",
     title: "Fullstack developer",
@@ -7,7 +8,7 @@ export default {
     projects: "Projects",
   },
   about: {
-    text: "Recently graduated software developer specializing in JavaScript, TypeScript, Python, and Node.js. Expertise in Django, React and Vue, with a focus on scalability. Currently improving skills in C# .NET, ASP.NET and SQL. I'm looking for fullstack or frontend opportunities to apply my passion for technology and philosophy.",
+    text: "Recently graduated software developer specializing in JavaScript, TypeScript, Python, and Node.js. Expertise in Django, React and Vue, with a focus on scalability. Currently i'm improving my skills in C# .NET, ASP.NET and SQL. I'm looking for a fullstack or frontend opportunities to apply my passion for technology and philosophy.",
   },
   experience: {
     binds: {
@@ -15,21 +16,21 @@ export default {
       date: "Ago 2022 - Set 2023",
       title: "Web Frontend Developer",
       description:
-        "Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Pellentesque nec nulla ligula. Donec gravida turpis a vulputate ultricies. Si num tem leite então bota uma pinga aí cumpadi! Per aumento de cachacis, eu reclamis.",
+        "I worked as a front-end developer using the Vue.js Javascript framework, building a high-demand PaaS. I fixed highly complex bugs and refactored and modernized code at various points in the platform. I also helped plan and design new features.",
     },
     slideworks: {
       company: "Slideworks",
       date: "Fev 2022 - Jun 2022",
       title: "Fullstack Developer",
       description:
-        "This comparison appears to be unintentional because the types and 'string' have no overlap. Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. A ordem dos tratores não altera o pão duris.",
+        "I worked within the Twillio omni-channel platform using Node.js and React.js. I was part of the support team and created and maintained functionalities for various clients. I also worked on creating chatbots and customer service flows.",
     },
     navy: {
       company: "Brazilian Navy",
       date: "Jan 2018 - Nov 2021",
       title: "Marine Soldier",
       description:
-        "Mussum Ipsum, cacilds vidis litro abertis.  Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. A ordem dos tratores não altera o pão duris.",
+        "I worked as a specialist in nuclear, biological, chemical, and radiological defense (NBQR Def.) in various actions such as the prevention and prompt deployment of NBQR accidents within the ARAMAR complex and prevention, disinfection, and decontamination within the scope of COVID-19. I also worked on the maintenance and security of naval installations.",
     },
     resume: "View full resumé"
   },

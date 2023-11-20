@@ -20,9 +20,11 @@ onMounted(() => {
     return { section, hasEnteredSections: ((currentHeight * 0.5) <= firstSectionHeight) }
   }
 
-  const about = ref<number | undefined>(document.getElementById('about')?.offsetHeight || 0)
-  const exp = ref<number | undefined>(document.getElementById('experience')?.offsetHeight || 0)
-  const projs = ref<number | undefined>(document.getElementById('projects')?.offsetHeight || 0)
+  type OffsetHeightElemet = number | undefined
+
+  const about = ref<OffsetHeightElemet>(document.getElementById('about')?.offsetHeight || 0)
+  const exp = ref<OffsetHeightElemet>(document.getElementById('experience')?.offsetHeight || 0)
+  const projs = ref<OffsetHeightElemet>(document.getElementById('projects')?.offsetHeight || 0)
 
   watch(scrollTop, (crr) => {
     if (crr <= Number(about?.value)) $emitter.emit('scrollComponent', createEventObj('about', crr, Number(about?.value)))
