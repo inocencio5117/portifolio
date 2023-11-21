@@ -51,5 +51,6 @@ export default {
         name: "Calculadora do Teorema de Pitágoras",
         description: "Um projeto fullstack que calcula o teorema de pitágoras. Feito utilizando Python e Flask no backend, React.js com Typescript no frontend"
     }
-  }
+  },
+  footer: "Design inspirado em "
 };

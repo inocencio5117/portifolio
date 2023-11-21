@@ -90,13 +90,13 @@ header {
           width: 2.25rem;
           margin-right: 3px;
           display: inline-block;
-          border: 1px solid #919191;
+          border: 1px solid var(--text-gray);
           vertical-align: middle;
           transition: all 100ms linear;
         }
 
         &>a {
-          color: #919191;
+          color: var(--text-gray);
           transition: all 100ms linear;
 
           &:hover, &.selected {

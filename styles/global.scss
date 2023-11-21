@@ -41,6 +41,7 @@ strong {
   /* defaults to dark theme */
   .dark-mode body {
     --text-color: #eee;
+    --text-gray: #919191;
     --bkg-color: #121212;
     --bkg-highlighted-color: #00ffff38;
     --text-highlighted-color: #00ffff;
@@ -50,6 +51,7 @@ strong {
   }
   .light-mode body {
     --text-color: #222;
+    --text-gray: #919191;
     --bkg-color: #fff;
     --bkg-highlighted-color: #0077b638;
     --text-highlighted-color: #0077b6;

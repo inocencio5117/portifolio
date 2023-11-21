@@ -56,4 +56,5 @@ export default {
         "A fullstack project that calculates the Pythagorean theorem. Made using Python and Flask on the backend, React.js with Typescript on the frontend",
     },
   },
+  footer: "Design inspired by "
 };

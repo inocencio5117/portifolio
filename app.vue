@@ -5,6 +5,7 @@
       <SectionsAbout />
       <SectionsExperience />
       <SectionsProjects />
+      <SectionsFooter />
     </ContentContainer>
   </MainContainer>
 </template>
