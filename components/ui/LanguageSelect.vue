@@ -11,7 +11,7 @@ const { locale, setLocale } = useI18n()
 
 const handleClick = () => locale.value === 'en-US' ? setLocale('pt-BR') : setLocale('en-US')
 
-const dynamicIconName = computed(() => locale.value === 'en-US' ? 'emojione-v1:flag-for-brazil' : 'emojione-v1:flag-for-united-states')
+const dynamicIconName = computed(() => locale.value === 'en-US' || !locale.value ? 'emojione-v1:flag-for-brazil' : 'emojione-v1:flag-for-united-states')
 </script>
 
 <style scoped lang="scss">
