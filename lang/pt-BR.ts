@@ -8,9 +8,16 @@ export default {
     projects: "Projetos",
   },
   about: {
-    text: "Desenvolvedor de Software recém-graduado com especialização em JavaScript, TypeScript, Python, e Node.js. Expertise em Django, React e Vue, com foco em escalabilidade. Atualmente, aprimorando habilidades em C# .NET, ASP.NET e SQL. Busco oportunidades fullstack ou frontend para aplicar minha paixão pela tecnologia e filosofia.",
+    text: "Desenvolvedor de Software graduado em Análise e Desenvolvimento de Sistemas com especialização em JavaScript, TypeScript, Python, e Node.js. Expertise em Django, React e Vue, com foco em escalabilidade. Atualmente, aprimorando habilidades em AWS e SQL. Busco oportunidades fullstack ou frontend para aplicar minha paixão pela tecnologia e filosofia.",
   },
   experience: {
+    nobuzz: {
+      company: "Nobuzz",
+      date: "Jan 2024 - Atualmente",
+      title: "Desenvolvedor Fullstack",
+      description:
+        "Na Nobuzz, participei de projetos variados, com foco na condução e criação de novos projetos em Next.js, manutenção de sistemas legados em Vue.js, otimização de respostas de APIs e correção de erros. Também contribui para a implementação de funcionalidades importantes, agregando valor e eficiência ao desenvolvimento."
+    },
     binds: {
       company: "Binds.co",
       date: "Ago 2022 - Set 2023",

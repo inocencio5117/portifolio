@@ -8,9 +8,16 @@ export default {
     projects: "Projects",
   },
   about: {
-    text: "Recently graduated software developer specializing in JavaScript, TypeScript, Python, and Node.js. Expertise in Django, React and Vue, with a focus on scalability. Currently i'm improving my skills in C# .NET, ASP.NET and SQL. I'm looking for a fullstack or frontend opportunities to apply my passion for technology and philosophy.",
+    text: "Software Developer graduated in Analysis and Systems Development with a specialization in JavaScript, TypeScript, Python, and Node.js. Expertise in Django, React, and Vue, focusing on scalability. Currently improving skills in AWS and SQL. Seeking fullstack or frontend opportunities to apply my passion for technology and philosophy.",
   },
   experience: {
+    nobuzz: {
+      company: "Nobuzz",
+      date: "Jan 2024 - Currently",
+      title: "Fullstack Developer",
+      description:
+        "At Nobuzz, I participated in various projects, focusing on leading and creating new projects in Next.js, maintaining legacy systems in Vue.js, optimizing API response times, and bug fixing. I also contributed to implementing important features, adding value and efficiency to development."
+    },
     binds: {
       company: "Binds.co",
       date: "Ago 2022 - Set 2023",

@@ -1,5 +1,12 @@
 {
     "items": [
+{
+            "company": "experience.nobuzz.company",
+            "date": "experience.nobuzz.date",
+            "title": "experience.nobuzz.title",
+            "description": "experience.nobuzz.description",
+            "techs": ["Vue.js", "Git", "Typescript", "Next.js", "Express", "Docker", "SQL", "Node.js"]
+        },
         {
             "company": "experience.binds.company",
             "date": "experience.binds.date",
