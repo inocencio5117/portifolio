@@ -5,7 +5,7 @@
         <div v-if="!isMobile" @click="sendToLink(item.link)" class="bkg-glass"></div>
         <div class="pjt-container">
           <div class="img-container">
-            <img :src="item.image" :alt="$t(item.name)">
+            <NuxtImg :src="item.image" :alt="$t(item.name)" />
           </div>
           <div class="text-container">
             <h3>
@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts" setup>
-import pjr from '~/data/projects.json'
+import pjr from '~/data/projects.json';
 
 const pjrData = ref(pjr)
 let isMobile = ref<boolean>(false)

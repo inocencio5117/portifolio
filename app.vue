@@ -15,11 +15,23 @@ const { t, locale } = useI18n()
 
 useHead({
   title: t("site_title"),
-  meta: [{
+  meta: [
+    {
     name: "color-scheme",
-    content: "dark light"
-  }],
-  htmlAttrs: { lang: locale.value },
+    content: "dark light",
+    },
+    {
+      name: "description",
+      content: "Portifolio de Vinicius Inocêncio de Souza",
+    },
+    {
+      name: "keywords",
+      content: "developer, fullstack, frontend, react, vue, javascript, typescript, python, c#, asp.net, sql, aws, next.js, express, docker, git, github, linkedin, vinicius inocencio, vinicius inocencio de souza, vinicius inocencio souza, inocencio, inocencio5117, inocencio5117 souza, inocencio souza, inocencio5117 de souza",
+    },
+  ],
+  htmlAttrs: {
+    lang: locale.value,
+   },
 })
 </script>
 

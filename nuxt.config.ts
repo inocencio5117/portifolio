@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["nuxt-icon", "@nuxtjs/color-mode", "@nuxtjs/i18n"],
+  modules: [
+    "nuxt-icon",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/i18n",
+    "@nuxt/image"
+  ],
   plugins: ["~/plugins/eventBus.ts"],
   i18n: {
     defaultLocale: "pt-BR",
