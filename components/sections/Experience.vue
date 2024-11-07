@@ -39,8 +39,8 @@ const expData = ref(exp)
 
 const resumeURL = computed(() => {
   return locale.value === 'pt-BR'
-    ? 'https://drive.google.com/file/d/1bPWOEnoXzZ6nENzR2g3cWNtlaEF0MHIV/view?usp=drive_link'
-    : 'https://drive.google.com/file/d/1YHhW6KLKowlCNvEmeCEDT_b8X0ymqG5B/view?usp=drive_link'
+    ? 'https://drive.google.com/file/d/1k4Ju8vEs6ib2Eg7OJWokq982cuVp-sT4/view?usp=sharing'
+    : 'https://drive.google.com/file/d/1k4Ju8vEs6ib2Eg7OJWokq982cuVp-sT4/view?usp=sharing'
 })
 
 </script>
