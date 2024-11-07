@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="handleClick">
+    <button @click="handleClick" aria-label="Toggle language">
       <Icon :name="dynamicIconName" />
     </button>
   </div>

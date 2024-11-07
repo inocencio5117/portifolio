@@ -1,6 +1,6 @@
 <template>
   <div class="color-toggle">
-    <button @click="handleClick">
+    <button @click="handleClick" aria-label="Toggle color mode">
       <Icon :class="colorMode.preference" :name="dynamicIconName" />
     </button>
   </div>

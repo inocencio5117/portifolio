@@ -10,7 +10,7 @@
           <div>
             <h3 class="exp-title">
               <div>
-                <a href=""></a>
+                <a aria-label="Empty link" href=""></a>
               </div>
               <span>{{ `${$t(item.title)} — ${$t(item.company)}` }}</span>
             </h3>
@@ -23,7 +23,7 @@
       </li>
     </ul>
     <div class="view-resume">
-      <a :href="resumeURL" target=”_blank” rel="noopener noreferrer">
+      <a aria-label="Link to resume" :href="resumeURL" target=”_blank” rel="noopener noreferrer">
         {{ $t('experience.resume') }}
       </a>
       <Icon name="system-uicons:arrow-right"></Icon>
@@ -32,7 +32,7 @@
 </template>
 
 <script lang="ts" setup>
-import exp from '~/data/experience.json'
+import exp from '~/data/experience.json';
 
 const { locale } = useI18n()
 const expData = ref(exp)

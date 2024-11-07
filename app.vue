@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 useHead({
   title: t("site_title"),
@@ -19,6 +19,7 @@ useHead({
     name: "color-scheme",
     content: "dark light"
   }],
+  htmlAttrs: { lang: locale.value },
 })
 </script>
 

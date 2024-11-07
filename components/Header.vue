@@ -11,25 +11,43 @@
     <nav class="nav">
       <ul>
         <li>
-          <a :class="{ 'selected': currentSection === 'about' }" href="#about">{{ $t('header.about') }}</a>
+          <a
+            :class="{ 'selected': currentSection === 'about' }"
+            href="#about"
+            :aria-label="$t('header.about')"
+          >
+            {{ $t('header.about') }}
+          </a>
         </li>
         <li>
-          <a :class="{ 'selected': currentSection === 'experience' }" href="#experience">{{ $t('header.experience') }}</a>
+          <a
+            :class="{ 'selected': currentSection === 'experience' }"
+            href="#experience"
+            :aria-label="$t('header.experience')"
+          >
+            {{ $t('header.experience') }}
+          </a>
         </li>
         <li>
-          <a :class="{ 'selected': currentSection === 'projects' }" href="#projects">{{ $t('header.projects') }}</a>
+          <a
+            :class="{ 'selected': currentSection === 'projects' }"
+            href="#projects"
+            :aria-label="$t('header.projects')"
+          >
+            {{ $t('header.projects') }}
+          </a>
         </li>
       </ul>
     </nav>
 
     <ul class="social-media">
       <li>
-        <a :href="githubURL" target=”_blank” rel="noopener noreferrer">
+        <a :href="githubURL" target=”_blank” rel="noopener noreferrer" aria-label="GitHub">
           <Icon name="uil:github" />
         </a>
       </li>
       <li>
-        <a :href="linkedinURL" target=”_blank” rel="noopener noreferrer">
+        <a :href="linkedinURL" target=”_blank” rel="noopener noreferrer" aria-label="LinkedIn">
           <Icon name="uil:linkedin" />
         </a>
       </li>
