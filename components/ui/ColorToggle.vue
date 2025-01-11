@@ -11,8 +11,7 @@ const colorMode = useColorMode()
 
 const handleClick = () => colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
 
-const dynamicIconName = computed(() => colorMode.preference === 'dark' ? 'material-symbols:light-mode' : 'solar:moon-stars-linear'
-)
+const dynamicIconName = computed(() => colorMode.preference === 'dark' ? 'material-symbols:light-mode' : 'solar:moon-stars-linear')
 </script>
 
 <style scoped lang="scss">

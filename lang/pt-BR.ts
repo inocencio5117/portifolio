@@ -8,7 +8,10 @@ export default {
     projects: "Projetos",
   },
   about: {
-    text: "Desenvolvedor de Software graduado em Análise e Desenvolvimento de Sistemas com especialização em JavaScript, TypeScript, Python, e Node.js. Expertise em Django, React e Vue, com foco em escalabilidade. Atualmente, aprimorando habilidades em AWS e SQL. Busco oportunidades fullstack ou frontend para aplicar minha paixão pela tecnologia e filosofia.",
+    text:
+      "Sou um desenvolvedor apaixonado por tecnologia e inovação, com foco em criar soluções eficientes e de impacto. Sempre curioso e detalhista, gosto de mergulhar nos desafios e aprender algo novo a cada projeto. \n"+
+      "Com experiência em tecnologias como TypeScript, Vue.js, React, Node.js e Next.js, minha trajetória envolve desde otimização de sistemas e desenvolvimento de funcionalidades até melhorias em desempenho. Tenho um grande interesse por arquitetura de código e interfaces consistentes, buscando sempre unir eficiência e qualidade em cada entrega.\n"+
+      "Além de tudo, sou um nerd assumido, movido pela curiosidade e pela paixão por transformar ideias em realidade. Se você também gosta de explorar possibilidades e fazer a diferença, vamos trocar ideias!",
   },
   experience: {
     nobuzz: {

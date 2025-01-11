@@ -1,7 +1,7 @@
 <template>
   <section id="experience" aria-label="My experience">
     <ul>
-      <li v-for="item in expData.items" class="exp-item">
+      <li v-for="item in expData.items" :key="item" class="exp-item">
         <div class="bkg-glass"></div>
         <div>
           <header>
@@ -16,7 +16,7 @@
             </h3>
             <p>{{ $t(item.description) }}</p>
             <ul class="techs-list">
-              <li v-for="tech in item.techs">{{ tech }}</li>
+              <li v-for="tech in item.techs" :key="tech">{{ tech }}</li>
             </ul>
           </div>
         </div>
@@ -38,9 +38,7 @@ const { locale } = useI18n()
 const expData = ref(exp)
 
 const resumeURL = computed(() => {
-  return locale.value === 'pt-BR'
-    ? 'https://drive.google.com/file/d/1k4Ju8vEs6ib2Eg7OJWokq982cuVp-sT4/view?usp=sharing'
-    : 'https://drive.google.com/file/d/1k4Ju8vEs6ib2Eg7OJWokq982cuVp-sT4/view?usp=sharing'
+  return "https://drive.google.com/drive/folders/1WgJ5JttQ2cuGEMMf8kyGDqL4mdM54jKu?usp=drive_link"
 })
 
 </script>
