@@ -1,7 +1,7 @@
 <template>
   <div class="color-toggle">
     <button @click="handleClick" aria-label="Toggle color mode">
-      <Icon :class="colorMode.preference" :name="dynamicIconName" />
+      <Icon :class="colorMode.value" :name="dynamicIconName" :key="colorMode.preference" />
     </button>
   </div>
 </template>
@@ -9,9 +9,22 @@
 <script lang="ts" setup>
 const colorMode = useColorMode()
 
-const handleClick = () => colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
+const handleClick = () => colorMode.value = colorMode.value === 'dark' ? 'light' : 'dark'
 
-const dynamicIconName = computed(() => colorMode.preference === 'dark' ? 'material-symbols:light-mode' : 'solar:moon-stars-linear')
+const dynamicIconName = computed(() => {
+  switch (colorMode.value) {
+    case 'dark':
+      return 'material-symbols:light-mode'
+    case 'light':
+      return 'solar:moon-stars-linear'
+    case 'system':
+      return 'material-symbols-light:settings-rounded'
+    default:
+      return 'material-symbols:light-mode'
+  }
+})
+
+console.log(dynamicIconName.value, colorMode.value)
 </script>
 
 <style scoped lang="scss">
@@ -31,7 +44,7 @@ const dynamicIconName = computed(() => colorMode.preference === 'dark' ? 'materi
       top: 50%;
       margin-top: -15%;
       transition: all 200ms linear;
-      &.dark {
+      &.dark, &.system {
         left: 5%;
       }
       &.light {
